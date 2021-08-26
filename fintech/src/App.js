@@ -6,6 +6,9 @@ import AuthResult from "./pages/AuthResult";
 import NewsMain from "./practice/newsapi/page/NewsMain";
 import AddUsers from "./practice/Auth/page/AddUsers";
 import AuthResults from "./practice/Auth/page/AuthResults";
+
+import Main from "./practice/fintech/Main";
+import Balance from "./practice/fintech/Balance";
 function App() {
   return (
     <Router>
@@ -28,8 +31,11 @@ function App() {
         <Route path="/addUser2" exact>
           <AddUsers></AddUsers>
         </Route>
-        <Route path="/authResult2" exact>
-          
+        <Route path="/main" exact>
+          <Main></Main>
+        </Route>
+        <Route path="/balance" exact>
+          <Balance></Balance>
         </Route>
       </Switch>
     </Router>
